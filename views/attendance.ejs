@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="attend.css">
+    <title>Attendance</title>
+</head>
+<body>
+    <form method="post" action="https://rs.formulahr.co.in/ams/AMSViewRosterCalendar.aspx" id="form1">
+        <div class="aspNetHidden">
+        <input type="hidden" name="TSM_HiddenField" id="TSM_HiddenField" value="">
+        <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+        <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+        <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNTY5ODA4Mzc3D2QWAgIDD2QWBAIBD2QWAgIBDw8WAh4EVGV4dGVkZAIGD2QWAmYPZBYEAgEPEGQQFQwKSmFuIC0gMjAyMwpGZWIgLSAyMDIzCk1hciAtIDIwMjMKQXByIC0gMjAyMwpNYXkgLSAyMDIzCkp1biAtIDIwMjMKSnVsIC0gMjAyMwpBdWcgLSAyMDIzClNlcCAtIDIwMjMKT2N0IC0gMjAyMwpOb3YgLSAyMDIzCkRlYyAtIDIwMjMVDAgxLzEvMjAyMwgyLzEvMjAyMwgzLzEvMjAyMwg0LzEvMjAyMwg1LzEvMjAyMwg2LzEvMjAyMwg3LzEvMjAyMwg4LzEvMjAyMwg5LzEvMjAyMwkxMC8xLzIwMjMJMTEvMS8yMDIzCTEyLzEvMjAyMxQrAwxnZ2dnZ2dnZ2dnZ2cWAQIJZAICDxBkEBUQCTIwMjQtMjAyNQkyMDIzLTIwMjQJMjAyMi0yMDIzCTIwMjEtMjAyMgkyMDIwLTIwMjEJMjAxOS0yMDIwCTIwMTgtMjAxOQkyMDE3LTIwMTgJMjAxNi0yMDE3CTIwMTUtMjAxNgkyMDE0LTIwMTUJMjAxMy0yMDE0CTIwMTItMjAxMwkyMDExLTIwMTIJMjAxMC0yMDExCTIwMDktMjAxMBUQBDIwMjQEMjAyMwQyMDIyBDIwMjEEMjAyMAQyMDE5BDIwMTgEMjAxNwQyMDE2BDIwMTUEMjAxNAQyMDEzBDIwMTIEMjAxMQQyMDEwBDIwMDkUKwMQZ2dnZ2dnZ2dnZ2dnZ2dnZxYBAgFkZGzTn+HeMZqd3i3+Ag/uQEaBZ9TqH3eo4fN2QyLBRTz8">
+        </div>
+        
+        <script type="text/javascript">
+        //<![CDATA[
+        var theForm = document.forms['form1'];
+        if (!theForm) {
+            theForm = document.form1;
+        }
+        function __doPostBack(eventTarget, eventArgument) {
+            if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                theForm.__EVENTTARGET.value = eventTarget;
+                theForm.__EVENTARGUMENT.value = eventArgument;
+                theForm.submit();
+            }
+        }
+        //]]>
+        </script>
+        
+        
+        <script src="./WebResource.axd" type="text/javascript"></script>
+        
+        
+        <script src="./ScriptResource.axd" type="text/javascript"></script>
+        <script src="./ScriptResource(1).axd" type="text/javascript"></script>
+        <div class="aspNetHidden">
+        
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="003ED28C">
+        </div>
+            <link type="text/css" rel="stylesheet" href="./style.css">	
+        <link type="text/css" rel="stylesheet" href="./table.css">
+        <link rel="stylesheet" href="./AutoComplete.css" type="text/css">
+        <link rel="stylesheet" type="text/css" media="all" href="./calendar.css" title="win2k-cold-1">
+        <link rel="StyleSheet" href="./tip-yellow.css" type="text/css">
+        
+        <script type="text/javascript" src="./jquery-1.4.3.min.js.download"></script>
+        <script type="text/javascript" src="./commonfns.js.download"></script>
+        <script type="text/javascript" src="./table.js.download"></script>
+        <script type="text/javascript" src="./clntfunlib1.js.download"></script>
+        <script type="text/javascript" src="./controlvalidation.js.download"></script>
+        <script type="text/javascript" src="./jquery.autocomplete.js.download"></script>
+        <script type="text/javascript" src="./emp.autocomplete.js.download"></script>
+        <script type="text/javascript" src="./calendar_new.js.download"></script>
+        <script type="text/javascript" src="./calendar-en.js.download"></script>
+        <script type="text/javascript" src="./calendar-setup.js.download"></script>
+        <script type="text/javascript" src="./jquery.poshytip.js.download"></script>
+        
+        <script type="text/javascript">
+        //<![CDATA[
+        Sys.WebForms.PageRequestManager._initialize('TSM', 'form1', ['tUpdatePanel1','UpdatePanel1'], ['DrPeriodMonths','DrPeriodMonths','DrPeriodYear','DrPeriodYear'], [], 90, '');
+        //]]>
+        </script>
+        
+             <table cellspacing="0" cellpadding="2" width="99%" >
+                <tbody><tr><td class="title">View Roster</td></tr>
+            </tbody></table>
+            
+            <input type="hidden" name="HFMonthOrYear" id="HFMonthOrYear">
+            <input type="hidden" name="HFPreviousNextFlag" id="HFPreviousNextFlag">
+            <input type="hidden" name="HFMDate" id="HFMDate">
+            
+                    
+            <table  cellpadding="0" cellspacing="0" width="100%" >
+            <tbody><tr><td height="10"></td></tr>
+                <tr class="empmenugrp">
+                   
+                    <td style="width:75%;height:25px;padding-top:3px;font-weight:normal;"  class="stext">
+                    </td>
+                </tr>
+            </tbody></table>
+               
+               <div id="UpdatePanel1">
+            
+                    <div id="UpdateProgress1" style="display:none;" role="status" aria-hidden="true">
+                
+                            <div style="width:100%;height:100%; padding-top:100px" >
+                                 Please Wait...<br><img alt="LoadingImage" src="./loader.gif">
+                            </div>
+                        
+            </div>
+                    <table width="100%"  cellspacing="0" cellpadding="1">
+                    <tbody><tr class="menubar">
+                        <td  style="border-bottom:1px solid #8F8F8F" colspan="2" class="adblockRightOver">Roster View</td>
+                        <td rowspan="2" width="120" class="adblockRightOut" onmouseover="this.className='adblockRightOver';" onmouseout="this.className='adblockRightOut';"  style="border-right:1px solid #8F8F8F">
+                            <select name="DrPeriodMonths" onchange="javascript:setTimeout('__doPostBack(\'DrPeriodMonths\',\'\')', 0)" id="DrPeriodMonths">
+                <option value="1/1/2023">Jan - 2023</option>
+                <option value="2/1/2023">Feb - 2023</option>
+                <option value="3/1/2023">Mar - 2023</option>
+                <option value="4/1/2023">Apr - 2023</option>
+                <option value="5/1/2023">May - 2023</option>
+                <option value="6/1/2023">Jun - 2023</option>
+                <option value="7/1/2023">Jul - 2023</option>
+                <option value="8/1/2023">Aug - 2023</option>
+                <option value="9/1/2023">Sep - 2023</option>
+                <option selected="selected" value="10/1/2023">Oct - 2023</option>
+                <option value="11/1/2023">Nov - 2023</option>
+                <option value="12/1/2023">Dec - 2023</option>
+        
+            </select><br>
+                            <a href="https://rs.formulahr.co.in/ams/AMSViewRosterCalendar.aspx#" style=" text-decoration:none;" onclick="ShowPrevNextMonth('P','10/1/2023 12:00:00 AM')">Prev.</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a style=" text-decoration:none;" href="https://rs.formulahr.co.in/ams/AMSViewRosterCalendar.aspx#" onclick="ShowPrevNextMonth('N','10/1/2023 12:00:00 AM')">Next</a>
+                        </td>
+                        <td rowspan="2" width="90" style="padding:0;vertical-align:top;padding-top:6px;" class="adblockRightOut" onmouseover="this.className='adblockRightOver';" onmouseout="this.className='adblockRightOut';" ><select name="DrPeriodYear" onchange="javascript:setTimeout('__doPostBack(\'DrPeriodYear\',\'\')', 0)" id="DrPeriodYear" style="font-weight:bold;width:70px;height:17px;">
+                <option value="2024">2024-2025</option>
+                <option selected="selected" value="2023">2023-2024</option>
+                <option value="2022">2022-2023</option>
+                <option value="2021">2021-2022</option>
+                <option value="2020">2020-2021</option>
+                <option value="2019">2019-2020</option>
+                <option value="2018">2018-2019</option>
+                <option value="2017">2017-2018</option>
+                <option value="2016">2016-2017</option>
+                <option value="2015">2015-2016</option>
+                <option value="2014">2014-2015</option>
+                <option value="2013">2013-2014</option>
+                <option value="2012">2012-2013</option>
+                <option value="2011">2011-2012</option>
+                <option value="2010">2010-2011</option>
+                <option value="2009">2009-2010</option>
+        
+            </select></td>
+                        <td rowspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        
+                        <td width="90" nowrap=""  class="adblockRightOver">
+                        
+                            <a href="https://rs.formulahr.co.in/ams/AMSViewRosterCalendar.aspx#" style=" text-decoration:none;" onclick="ShowMonthYearWise('M')">Monthwise</a>
+                        </td>
+                        
+                        
+                        <td width="90" nowrap=""  class="adblockRightOut">
+                        <a href="https://rs.formulahr.co.in/ams/AMSViewRosterCalendar.aspx#" id="AncYearwise" style=" text-decoration:none;" onclick="ShowMonthYearWise('Y')">Yearwise</a>
+                        </td>
+                    </tr>
+                    </tbody></table>
+                  
+                        <table width="99%" cellpadding="3" cellspacing="0"  >
+                        <tbody><tr>
+                            <td  width="40%">
+                             
+                            </td>
+                            <td  style="color:white"><span class="bold">
+                            October - 2023
+                            
+                            </span></td>
+                            <td  class="stext">
+                                <img alt="Working Day" src="./leg1.gif" > Working Day&nbsp;&nbsp;
+                                <img alt="Half Day Working" src="./leg5.gif" > Half Day Working  &nbsp;&nbsp;
+                                <img alt="Weekly Off" src="./leg3.gif" > Weekly Off &nbsp;&nbsp;
+                                <img alt="Holiday" src="./leg4.gif" > Holiday&nbsp;&nbsp;			
+                                
+                            </td>
+                        </tr>
+                    </tbody></table>
+        
+                     
+             
+                    <table cellpadding="4" cellspacing="0" width="99%" class="table" >
+                    <tbody><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>
+                    <tr>
+                    
+                                    <td valign="top" width="60" height="60" title="Weekly Off"  style="background-color:#c69c6d;color:#000;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">1</span>
+                                     
+                                        <br><span class="stext" style="color:#000">Weekly Off</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Holiday"  style="background-color:#fff200;color:#000;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">2</span>
+                                     
+                                        <br><span class="stext" style="color:#000">Holiday</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">3</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">4</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">5</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">6</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Weekly Off"  style="background-color:#c69c6d;color:#000;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">7</span>
+                                     
+                                        <br><span class="stext" style="color:#000">Weekly Off</span>
+                                    
+                                    </td>
+                                    
+                               </tr><tr>
+                        
+                                    <td valign="top" width="60" height="60" title="Weekly Off"  style="background-color:#c69c6d;color:#000;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">8</span>
+                                     
+                                        <br><span class="stext" style="color:#000">Weekly Off</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">9</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">10</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">11</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">12</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General (CL / SL)</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">13</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Weekly Off"  style="background-color:#c69c6d;color:#000;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">14</span>
+                                     
+                                        <br><span class="stext" style="color:#000">Weekly Off</span>
+                                    
+                                    </td>
+                                    
+                               </tr><tr>
+                        
+                                    <td valign="top" width="60" height="60" title="Weekly Off"  style="background-color:#c69c6d;color:#000;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">15</span>
+                                     
+                                        <br><span class="stext" style="color:#000">Weekly Off</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">16</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">17</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General (CL / SL)</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">18</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">19</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">20</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Weekly Off"  style="background-color:#c69c6d;color:#000;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">21</span>
+                                     
+                                        <br><span class="stext" style="color:#000">Weekly Off</span>
+                                    
+                                    </td>
+                                    
+                               </tr><tr>
+                        
+                                    <td valign="top" width="60" height="60" title="Weekly Off"  style="background-color:#c69c6d;color:#000;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">22</span>
+                                     
+                                        <br><span class="stext" style="color:#000">Weekly Off</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Holiday"  style="background-color:#fff200;color:#000;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">23</span>
+                                     
+                                        <br><span class="stext" style="color:#000">Holiday</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Holiday"  style="background-color:#fff200;color:#000;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">24</span>
+                                     
+                                        <br><span class="stext" style="color:#000">Holiday</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">25</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">26</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">27</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Weekly Off"  style="background-color:#c69c6d;color:#000;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">28</span>
+                                     
+                                        <br><span class="stext" style="color:#000">Weekly Off</span>
+                                    
+                                    </td>
+                                    
+                               </tr><tr>
+                        
+                                    <td valign="top" width="60" height="60" title="Weekly Off"  style="background-color:#c69c6d;color:#000;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">29</span>
+                                     
+                                        <br><span class="stext" style="color:#000">Weekly Off</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">30</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General</span>
+                                    
+                                    </td>
+                                    
+                                    <td valign="top" width="60" height="60" title="Working Day"  style="background-color:#39b54a;color:#fff;padding-right:7px;"><span style="font-size:15px;font-weight:bold;">31</span>
+                                     
+                                        <br><span class="stext" style="color:#fff">General</span>
+                                    
+                                    </td>
+                                    
+                            <td height="60">&nbsp;</td>
+                       
+                            <td height="60">&nbsp;</td>
+                       
+                            <td height="60">&nbsp;</td>
+                       
+                            <td height="60">&nbsp;</td>
+                       
+                   </tr>
+                </tbody></table>
+                
+                
+        </div>
+                  <script type="text/javascript">
+                      function setdivheight() {
+                          var winh = $(window).height();
+                          $('#div-report').height(parseInt(winh) * 70 / 100);
+                          window.onresize = setdivheight;
+                      }
+                      window.onload = setdivheight;
+                    </script>
+           
+        
+        <script type="text/javascript">
+        //<![CDATA[
+        (function() {var fn = function() {$get('TSM_HiddenField').value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();Sys.Application.add_init(function() {
+            $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":null,"displayAfter":500,"dynamicLayout":true}, null, null, $get("UpdateProgress1"));
+        });
+        //]]>
+        </script>
+        </form>
+</body>
+    
+</html>

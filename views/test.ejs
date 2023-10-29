@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Capture</title>
+</head>
+<body>
+    <li>Signin</li>
+    <p id="displayTime"></p>
+
+    <script>
+        document.getElementById("captureTime").addEventListener("click", function() {
+            var currentTime = new Date();
+            document.getElementById("displayTime").innerHTML = "Current Time: " + currentTime;
+            
+            // Send the currentTime to the server-side
+            sendToServer(currentTime);
+        });
+
+        function sendToServer(currentTime) {
+            // Use JavaScript fetch or an AJAX library to send the data to the server
+            // Example using fetch:
+            fetch("/your-server-endpoint", {
+                method: "POST",
+                body: JSON.stringify({ currentTime: currentTime }),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            .then(response => {
+                // Handle the server's response if needed
+            })
+            .catch(error => {
+                console.error("Error sending data to server: " + error);
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile-update.css">
+    
+    <title>Profile Update</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome, <%= Ename%> </h1><a>Employee ID :</a><a id="EmplIDfromheader"><%= Ecode%></a><div id="divbuttonlogoff"><button id="Logoff" href="/logoff">Log off</button></div>
+    </header>
+
+    <main>
+        <div class="headerofcontainer">
+            <span class="header-text">CURRENT RESIDENTIAL ADDRESS</span>
+            <button id="minimizebtn1" class="minimizebtn"><img id="arrowid1" class="arrowstyle" alt="acc" height="30px" width="30px" src="/resources/arrow-down.png"></button>
+       
+            <form id="form1" class="formforupdate" data-action="/update-address" method="POST">
+                                
+                    <label for="address1">Address1:</label>
+                    <input type="text" id="address1" class="currentaddressdt" name="Address1" value="<%= Address1%>"><br>
+                    <label for="address2">Address2:</label>
+                    <input type="text" id="address2" name="Address2" class="currentaddressdt" value="<%= Address2%>"><br>
+                    <label for="City">City:</label>
+                    <input type="text" id="address3" name="City" class="currentaddressdt" value="<%= City%>"><br>
+                    <label for="State">State:</label>
+                    <input type="text" id="address4" name="State" class="currentaddressdt" value="<%= State%>"><br>
+                    <label for="Pincode">Pincode:</label>
+                    <input type="text" id="address5" name="Pincode" class="currentaddressdt" value="<%= Pincode%>"><br>
+                    <label for=""></label>
+                    
+                  <button id="Sumbitbutton1" class="Sumbitbutton" type="submit" >Update Address</button>
+            </form>
+            <span id="resp-from-database1" class="resp-remark"></span>  
+        </div>
+
+        <div class="headerofcontainer">
+            <span class="header-text">PERMANENT ADDRESS DETAILS</span>
+            <button id="minimizebtn2" class="minimizebtn" ><img id="arrowid2" class="arrowstyle" alt="acc" src="/resources/arrow-down.png"></button>
+       
+                   
+            <form id="form2" class="formforupdate" data-action="/update-Paddress" method="POST">
+                                
+                <label for="Paddress1">Address1:</label>
+                <input type="text" id="paddress1" class="currentaddressdt2" name="Address1" value="<%= PAddress1%>"><br>
+                <label for="Paddress2">Address2:</label>
+                <input type="text" id="paddress2" name="Address2" class="currentaddressdt2" value="<%= PAddress2%>"><br>
+                <label for="PCity">City:</label>
+                <input type="text" id="paddress3" name="City" class="currentaddressdt2" value="<%= PCity%>"><br>
+                <label for="PState">State:</label>
+                <input type="text" id="paddress4" name="State" class="currentaddressdt2" value="<%= PState%>"><br>
+                <label for="PPincode">Pincode:</label>
+                <input type="text" id="paddress5" name="Pincode" class="currentaddressdt2" value="<%= PPincode%>"><br>
+                <label for=""></label>
+                
+              <button id="Sumbitbutton2" class="Sumbitbutton" type="submit" >Update Address</button>
+            </form>
+            <span id="resp-from-database2" class="resp-remark"></span>  
+        </div>
+        
+        <div class="headerofcontainer">
+            <span class="header-text">Contact Details</span>
+            <button id="minimizebtn3" class="minimizebtn" ><img id="arrowid3" class="arrowstyle" alt="acc" src="/resources/arrow-down.png"></button>
+       
+            <form id="form3" class="formforupdate" data-action="/update-contact" method="POST">
+                                
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile"  class="currentaddressdt3" name="Mobile" value="<%= Mobile%>"><br>
+                    <label for="altnumber">Alt Mobile Number:</label>
+                    <input type="tel" id="altnumber" class="currentaddressdt3" name="Alt_numb" value="<%= Alt_numb%>"><br>
+                    <label for="landline">Landline Number:</label>
+                    <input type="tel" id="landline" class="currentaddressdt3" name="Landline_numb" value="<%= Landline_numb%>"><br>
+                    <label for="Email">Email ID:</label>
+                    <input type="email" id="Email" class="currentaddressdt3" name="Email" value="<%= Email%>"><br>
+                    <label for=""></label>
+                  <button id="Sumbitbutton3" class="Sumbitbutton" type="submit">Update Contact</button>
+                </form>
+                <span id="resp-from-database3" class="resp-remark"></span>  
+        </div>
+        <div class="headerofcontainer">
+            <span class="header-text">Personal Details</span>
+            <button id="minimizebtn4" class="minimizebtn" ><img id="arrowid4" class="arrowstyle" alt="acc" src="/resources/arrow-down.png"></button>
+       
+            <form id="form4" class="formforupdate" data-action="/update-personal" method="POST">
+                                 
+                    <label for="pan">PAN Number:</label>
+                    <input type="text" id="pan" class="currentaddressdt4" name="Pan" value="<%= Pan%>"><br>
+                    <label for="Aadhaar">Aadhaar Number:</label>
+                    <input type="tel" id="Aadhaar" class="currentaddressdt4" name="Aadhaar" value="<%= Aadhaar%>"><br>
+                    <label for="UAN">PF UAN Number:</label>
+                    <input type="tel" id="UAN" class="currentaddressdt4" name="UAN" value="<%= UAN%>"><br>
+                    <label for=""></label>
+                  <button id="Sumbitbutton4" class="Sumbitbutton" type="submit" >Update Details</button>
+            </form>
+            <span id="resp-from-database4" class="resp-remark"></span> 
+        </div>
+        <div class="headerofcontainer">
+            <span class="header-text">Education Details</span>
+            <button id="minimizebtn5" class="minimizebtn" ><img id="arrowid5" class="arrowstyle" alt="acc" src="/resources/arrow-down.png"></button>
+       
+            <form id="form5" class="formforupdate" data-action="/update-profile" method="POST">
+                                
+                    <label for="address1">Address1:</label>
+                    <input type="text" id="address" name="address1" value="<%= Address1%>"><br>
+                    <label for="address2">Address2:</label>
+                    <input type="text" id="address" name="address1" value="<%= Address1%>"><br>
+                    <label for=""></label>
+                  <button id="Sumbitbutton5" class="Sumbitbutton" type="submit">Update Address</button>
+            </form>
+        </div>
+    </main>
+    <script>
+        var Empl_ID = '<%= Ecode%>'
+    </script>
+    <script src="profile-update.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashstyle.css">
+    <title>HR Portal Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome, <%= User%> </h1><a>Employee ID :</a><a id="EmplIDfromheader"><%= Empl%></a><div id="divbuttonlogoff"><button id="Logoff" href="/logoff">Log off</button></div>
+    </header>
+
+    <main>
+       <div id="SignF">
+             <button id="captureTimeIn" href="Sign In">Sign In</button><a id="displayTimeIn"></a>
+       </div>
+       <div id="SignF">
+             <button id="captureTimeOut" href="Sign Out">Sign Out</button><a id="displayTimeOut"></a>
+       </div>
+
+       <form id="form1">
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <h4>Profile Update</h4>
+                    <p>Update your personal and contact information.</p>
+                    <a href="/profile-update" class="dashboard-link">Update Profile</a>
+                </div>
+            
+                <div class="dashboard-card">
+                    <h4>Attendance</h4>
+                    <p>View your attendance records and mark your attendance.</p>
+                    <a href="/views/attendance.ejs" class="dashboard-link">Go to Attendance</a>                    
+                </div>
+                
+                <div class="dashboard-card">
+                    <h4>HR Policies</h4>
+                    <p>Access and review HR policy documents and updates.</p>
+                    <a href="hr-policy.html" class="dashboard-link">View HR Policies</a>
+                </div>
+
+                <div class="dashboard-card">
+                    <h4>View Payslip</h4>
+                    <p>View your payslip for a specific month and year.</p>
+                    <a href="payslip.html" class="dashboard-link">View Payslip</a>
+                </div>
+
+                <div class="dashboard-card">
+                    <h4>Reimbursement Update</h4>
+                    <p>Submit and track reimbursement requests.</p>
+                    <a href="reimbursement.html" class="dashboard-link">Manage Reimbursements</a>
+                </div>
+                
+                <div class="dashboard-card">
+                    <h4>Query Helpdesk</h4>
+                    <p>Submit and track queries or issues to the HR helpdesk.</p>
+                    <a href="helpdesk.html" class="dashboard-link">Submit Query</a>
+                </div>
+
+            </div>
+        </form>
+        <form id="form2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum corrupti officia autem vero? Sequi, quia nobis odit quis voluptatibus explicabo sint itaque, dolorum omnis voluptate corrupti consequatur earum impedit ipsum!</p>
+        </form>
+    </main>
+
+<script>
+        var serverIntime = "<%= Intime%>";
+        var serverOuttime = "<%= Outtime%>";
+        var EmplName = "<%= Empl%>";
+
+</script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
